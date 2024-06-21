@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="login_al.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <form action="javascript:history.back()">
+		<button type="submit" value="Voltar">Voltar</button>
+    </form>
+
+    <div class="container">
+
+        <form action="login_al.php" method="post" id="form">
+            <br>
+            <label for="ra">RA:</label><br>
+            <input type="number" id="ra" name="ra"><br><br>
+            <label for="password">Senha:</label><br>
+            <input type="password" id="password" name="password"><br><br>
+            <input type="submit" value="Entrar" id="entrar">
+        </form>
+
+        <br><br>
+      
+        
+    </div>
+
+      <script>
+        function goBack() {
+        window.location.href = document.referrer;
+    };
+      </script>
+</body>
+</html>
